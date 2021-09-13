@@ -34,8 +34,12 @@
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>ミッション開始。</h2>
-            <p class="text-center">まずは、この学校の家庭科室の鍵のありかを知らなければ入ることができない。<br>
-              下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
+            <p class="text-center">「よぉ、新人。俺だ。エージェント冷奴だ。早速今回の潜入先について早々に監視施設のヤツを<br>
+              とっちめたんだが…侵入経路の情報を得ようと思ったんだがファイルを開くのにパスワードが必要らしくてな。<br>
+              監視員は気絶しちまってるもんで聞き出せないんだ。ただヒントになりそうなそれっぽいメモがあったんで<br>
+              こいつを解いてくれ。データは送っておくぜ。」<br><br>
+              
+              早速出番のようだ。画像の謎を解いてパスワードを出そう。</p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
   
             <div class="container">
@@ -68,7 +72,7 @@ Youtube貼り付けここまで -->
               1番麺の引数 $event は正解、不正解の判定を受け取る変数です。
               []、()の間違い、''の抜けがあると動きません。
             ------------------------------------------------------------------------------------------------------------>
-            <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['ほんだな']['本棚']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
             <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
           </div>
