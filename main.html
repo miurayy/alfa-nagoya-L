@@ -63,7 +63,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>冷奴「編集者のせいでここから先進めないって？おいおい勘弁してくれよ、こっちは命がけで仕事やってんだよ」</h2>
+            <h2 class="section-title"><span class="section-title__stage">MISSION:1</span>解読セヨ</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -88,9 +88,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
+              <div class="clear-message__title">MISSION：１  クリア！</div>
               <div class="clear-message__content">「お、ファイルが開いた。この地図から侵入経路を決めるか...<br>
-                しかしザルな警備だぜ...ある程度ファイルにはそっちに送信しておく。取っといてくれ。」</div>
+                しかしザルな警備だぜ...情報ファイルにはそっちに送信しておく。自動で保存されるぜ。」</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -109,15 +109,20 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">MISSION：2</span>通信セヨ</h2>
+              <p class="text-center">「こちらエージェント冷奴。聞こえるか？新人？<br>
+                実はこの施設には俺がここに来るより先に潜入捜査をしているエージェントがいるんだ。<br>
+                そいつと連絡を取りたいんだが施設内に
+                妨害電波を発する装置――――いわゆるジャマーってやつだな―――そいつがあって通信できないんだ。<br>
+                とりあえずジャマーのある部屋まで行ってはみたんだがどうにもこいつを解かないとならんらしい。<br>
+                こういうのは苦手でな...」<br><br>
+                謎解きが苦手な冷奴の代わりに謎を解いてあげよう！
+              </p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
-              <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
+              <h2 class="section-title"><span class="section-title__stage">MISSION：2</span>キーワードを入力</h2>
               <!-------------------------------------------------------------
                 class名"row"内のclass名"column"が横並びになります。
                 改行する場合は以下のように追加してください。
@@ -183,9 +188,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__title">MISSION：2　クリア！</div>
+              <div class="clear-message__content">「<br>
+                「・・・・・・・・・よし！ジャマーは真っ二つに叩き折ってやったぜ！これで通信ができる!」</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -200,10 +205,14 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>家庭科室の課題とは</h2>
-            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
-              どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
-              これらを解決するための最後の謎を解いていこう！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">MISSION：3</span>兵器ヲ止メヨ</h2>
+            <p class="text-center">「今から先に潜入していたエージェント勝節と交えた通信をする。ちょっと待ってろ。　　こちらエージェント冷奴、聞こえるか？勝節」<br>
+              『・・・おぉ、冷奴じゃないか！聞こえているよ。半年間も潜入させられて音沙汰がないもんだから見捨てられたかと思ったよ。』<br>
+              「見かけねぇと思ったらそんな長いこと潜入してたのか。全く、ボスも鬼だな。そっちから最深部への扉を開けてくれ。」
+              『了解。　　ああ、それと。例の兵器が起動するまであと僅かなんだ。できるだけ急いでこちらに来てくれ。』
+              「！？！？　お前！！それをもっと早く言えええええええええええええええぇえぇええぇえぇぇえ！！！」<br><br><br>
+              
+              大急ぎで暗号を解読し、兵器を止めにいこう！</p>
             <figure class="image__container">
               <img src="assets/images/stage_1.png" alt="">
             </figure>
